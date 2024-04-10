@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../images/hero_desktop.jpg);
+    background-size: cover; // Ajusta o tamanho da imagem para cobrir toda a seção
+    background-position: center; // Centraliza a imagem na seção
+    background-repeat: no-repeat;
+
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Smokum', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    background-color: variaveis.$corDunFundoBotao;
+    color: variaveis.$corTextoBotao;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    margin-top: 300px;
+    margin-left: 180px;
+    }
+
+    .button-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    button:hover {
+        background-color: darken(variaveis.$corDunFundoBotao, 10%);
+    }
+}

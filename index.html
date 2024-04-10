@@ -4,9 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Filme</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Smokum&display=swap">
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <h1>Olá!</h1>
+    <section class="hero">
+        <button>
+            <a href="https://www.youtube.com/watch?v=IFNUGzCOQoI" target="_blank" class="button-link">Watch the trailer</a>
+        </button>
+    </section>
+    <section class="characters">
+        <nav class="characters__tabs">
+            <button data-tab-button="blondie" class="characters__tabs__button characters__tabs__button--is-active">
+                Blondie (The Good)
+            </button>
+            <button data-tab-button="angel_eyes" class="characters__tabs__button">
+                Angel Eyes (The Bad)
+            </button>
+            <button data-tab-button="tuco" class="characters__tabs__button">
+                Tuco (The Ugly)
+            </button>
+        </nav>
+        <ul data-tab-id="blondie" class="characters__list characters__list--is-active">
+            <li class="characters__list__item">
+                <img src="./dist/images/good/blondie_01.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/good/blondie_02.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/good/blondie_03.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/good/blondie_04.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/good/blondie_05.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/good/blondie_06.png">
+            </li>
+        </ul>
+        <ul data-tab-id="angel_eyes" class="characters__list">
+            <li class="characters__list__item">
+                <img src="./dist/images/bad/angel_eyes_01.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/bad/angel_eyes_02.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/bad/angel_eyes_03.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/bad/angel_eyes_04.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/bad/angel_eyes_05.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/bad/angel_eyes_06.png">
+            </li>
+        </ul>
+        <ul data-tab-id="tuco" class="characters__list">
+            <li class="characters__list__item">
+                <img src="./dist/images/ugly/tuco_01.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/ugly/tuco_02.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/ugly/tuco_03.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/ugly/tuco_04.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/ugly/tuco_05.png">
+            </li>
+            <li class="characters__list__item">
+                <img src="./dist/images/ugly/tuco_06.png">
+            </li>
+        </ul>
+    </section>
+    <section class="movie_info">
+        <h2 class="title">About the movie</h2>
+        <ul class="movie_info__topic">
+            <li class="movie_info__topic__item">
+                <div class="movie_info__topic__item__title" data-movie-info-topic>
+                    Directed by
+                </div>
+                <div class="movie_info__topic__item__description text--big">
+                    Sergio Leone
+                </div>
+            </li>
+            <li class="movie_info__topic__item">
+                <div class="movie_info__topic__item__title" data-movie-info-topic>
+                    Release Date
+                </div>
+                <div class="movie_info__topic__item__description text--big">
+                    December 23, 1966
+                </div>
+            </li>
+            <li class="movie_info__topic__item">
+                <div class="movie_info__topic__item__title" data-movie-info-topic>
+                    Soundtrack
+                </div>
+                <div class="movie_info__topic__item__description text--big">
+                    Ennio Morricone
+                </div>
+            </li>
+            <li class="movie_info__topic__item">
+                <div class="movie_info__topic__item__title" data-movie-info-topic>
+                    Main Cast
+                </div>
+                <div class="movie_info__topic__item__description text--big">
+                    <ul class="main_cast">
+                        <li>Clint Eastwood as Blondie</li>
+                        <li>Lee Van Cleef as Angel Eyes</li>
+                        <li>Eli Wallach as Tuco</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="movie_info__topic__item">
+                <div class="movie_info__topic__item__title" data-movie-info-topic>
+                    Running Time
+                </div>
+                <div class="movie_info__topic__item__description text--big">
+                    161 minutes (2h41min)
+                </div>
+            </li>
+            <li class="movie_info__topic__item">
+                <div class="movie_info__topic__item__title" data-movie-info-topic>
+                    Synopsis
+                </div>
+                <div class="movie_info__topic__item__description text--big synopsis">
+                    During the American Civil War, three men set off to find $200,000.00 in buried gold coins. Tuco and Blondie have known each other for some time now, having used the reward on Tuco's head as a way of earning money. They come across a dying man, Bill Carson, who tells them of a treasure in gold coins. By chance, he reveals the name of the cemetery and the name of the grave where the gold is buried. Now rivals, the two men have good reason to keep each other alive. The third man, Angel Eyes, hears of the gold stash from someone he's been hired to kill. All he knows is to look for someone named Bill Carson. The three ultimately meet in a showdown that takes place amid a major battle between Confederate and Union forces.
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="./src/main.js"></script>
 </body>
 </html>
