@@ -4,24 +4,37 @@
     padding: 5.6vw;
     min-height: 80vh;
     background-image: url(../images/hero_desktop.jpg);
-    background-size: cover; // Ajusta o tamanho da imagem para cobrir toda a seção
+    background-size: 100% 100%; // Ajusta o tamanho da imagem para cobrir toda a seção
     background-position: center; // Centraliza a imagem na seção
     background-repeat: no-repeat;
 
-  button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-family: 'Smokum', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    background-color: variaveis.$corDunFundoBotao;
-    color: variaveis.$corTextoBotao;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 4px;
-    margin-top: 300px;
-    margin-left: 180px;
+    @media (max-width: 768px) {
+        background-image: url(../images/hero_mobile.jpg);
+        background-size: 100% 100%;
+    }
+
+    button {
+        display: inline-block;
+        padding: 1vw 2vw;
+        font-family: 'Smokum', sans-serif;
+        font-size: 3vw;
+        font-weight: 500;
+        letter-spacing: 0.2vw;
+        background-color: variaveis.$corDunFundoBotao;
+        color: variaveis.$corTextoBotao;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 0.4vw;
+        margin-top: 380px;
+        margin-left: 15px;
+
+        @media (max-width: 768px) {    
+            margin-top: 430px;
+            margin-left: 10px;
+            width: 35%; // Alterando a largura do botão para 70% da largura da tela
+            font-size: 20px;
+            height: auto;
+        }
     }
 
     .button-link {
